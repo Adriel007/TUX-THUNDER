@@ -1,3 +1,5 @@
+#!/bin/sh
+
 tce-load -wi compiletc git cmake openssl-dev zlib_base-dev ncursesw-dev libssh2-dev libcap-dev libgcrypt-dev autoconf automake perl5 m4
 
 git clone https://github.com/vanhauser-thc/thc-hydra.git
