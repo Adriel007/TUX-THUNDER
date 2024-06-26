@@ -19,7 +19,7 @@ chmod +x brute_force.sh
 ### 0. **Starting**
 ```sh
 # General
-tce-load -wi nano vim kmaps automake
+tce-load -wi nano vim kmaps compiletc
 sudo loadkmap < /usr/share/kmap/qwerty/br-abnt2.kmap
 
 wget ftp://ftp.figlet.org/pub/figlet/program/unix/figlet-2.2.5.tar.gz

@@ -9,4 +9,5 @@ sudo make install
 
 cd
 echo "alias clear='clear && echo -e \"\e[31m$(figlet TUX-THUNDER)\e[0m\"'" >> /home/tc/.ashrc
+exec ash
 clear
