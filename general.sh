@@ -17,12 +17,7 @@ clear
 show_menu() {
     echo "Installation Menu"
     
-    echo "1. Brute Force"
-    echo "   - Hydra"
-    echo "   - John The Ripper"
-    echo "   - Medusa"
-    echo "   - Hashcat"
-
+    echo "1. Brute Force (Hydra, John The Ripper, Medusa, Hashcat)"
     echo "2. ..."
     echo "3. ..."
     echo "4. ..."
