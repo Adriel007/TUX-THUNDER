@@ -56,7 +56,7 @@ while true; do
     
     if [ "$choice" -eq 0 ]; then
         clear
-        echo "Please, type '. /home/tc/.ashrc' to update your shell environment if it is your first time using TUX-THUNDER"
+        echo "Please, type '. /home/tc/.ashrc' to update all aliases if you installed some new tools."
         break
     fi
     
