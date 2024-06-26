@@ -16,7 +16,13 @@ clear
 
 show_menu() {
     echo "Installation Menu"
+    
     echo "1. Brute Force"
+    echo "   - Hydra"
+    echo "   - John The Ripper"
+    echo "   - Medusa"
+    echo "   - Hashcat"
+
     echo "2. ..."
     echo "3. ..."
     echo "4. ..."
@@ -54,9 +60,10 @@ while true; do
     read -p "Choose an option: " choice
     
     if [ "$choice" -eq 0 ]; then
+        clear
+        echo "Please, type '. /home/tc/.ashrc' to update your shell environment if it is your first time using TUX-THUNDER"
         break
     fi
     
     install_tool $choice
-    read -p "Press Enter to continue..."
 done
