@@ -11,7 +11,7 @@ git clone https://github.com/openwall/john.git
 cd /home/tc/john/src
 ./configure
 make
-alias john='/home/tc/john/run/john'
+echo "alias john='/home/tc/john/run/john'" >> /home/tc/.ashrc
 
 git clone https://github.com/jmk-foofus/medusa.git
 cd /home/tc/medusa
