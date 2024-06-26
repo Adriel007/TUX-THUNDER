@@ -1,11 +1,10 @@
-# TUX_THUNDER
+# TUX-THUNDER
 ## TINY CORE PENTEST SERIES
 
 ### 0. **Starting**
 ```sh
 # General
-sudo tce-update
-tce-load -wi kmaps
+tce-load -wi nano vim kmaps
 sudo loadkmap < /usr/share/kmap/qwerty/br-abnt2.kmap
 
 wget ftp://ftp.figlet.org/pub/figlet/program/unix/figlet-2.2.5.tar.gz
@@ -15,8 +14,8 @@ make
 sudo make install
 
 cd
+echo "alias clear='clear && echo -e \"\e[31m$(figlet TUX-THUNDER)\e[0m\"'" >> /home/tc/.ashrc
 clear
-echo -e "\e[31m$(figlet TUX THUNDER)\e[0m"
 ###########################
 ```
 
@@ -24,7 +23,6 @@ echo -e "\e[31m$(figlet TUX THUNDER)\e[0m"
 - **Ferramentas**: Hydra, John the Ripper, Medusa, Hashcat
 
 ```sh
-echo STARTING...
 tce-load -wi compiletc git cmake openssl-dev zlib_base-dev ncursesw-dev libssh2-dev libcap-dev libgcrypt-dev autoconf automake perl5 m4
 
 git clone https://github.com/vanhauser-thc/thc-hydra.git
@@ -37,7 +35,7 @@ git clone https://github.com/openwall/john.git
 cd /home/tc/john/src
 ./configure
 make
-alias john='/home/tc/john/run/john'
+echo "alias john='/home/tc/john/run/john'" >> /home/tc/.ashrc
 
 git clone https://github.com/jmk-foofus/medusa.git
 cd /home/tc/medusa
@@ -52,7 +50,6 @@ sudo make install
 
 cd
 clear
-echo OK
 ```
 
 ### 2. **Sniffing**
