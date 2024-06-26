@@ -7,23 +7,24 @@ cd /home/tc/thc-hydra
 ./configure
 make
 sudo make install
+cd
 
 git clone https://github.com/openwall/john.git
 cd /home/tc/john/src
 ./configure
 make
 echo "alias john='/home/tc/john/run/john'" >> /home/tc/.ashrc
+cd
 
 git clone https://github.com/jmk-foofus/medusa.git
 cd /home/tc/medusa
 ./configure
 make
 sudo make install
+cd
 
 git clone https://github.com/hashcat/hashcat.git
 cd /home/tc/hashcat
 make
 sudo make install
-
 cd
-clear
