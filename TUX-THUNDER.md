@@ -1,10 +1,25 @@
 # TUX-THUNDER
 ## TINY CORE PENTEST SERIES
 
+## Installation
+### - Core Linux:
+- Brute Force:
+```sh
+tce-load -wi openssl-dev curl
+
+curl -L -O https://raw.githubusercontent.com/adriel007/tux-thunder/main/general.sh
+chmod +x general.sh
+./general.sh
+
+curl -L -O https://raw.githubusercontent.com/adriel007/tux-thunder/main/brute_force.sh
+chmod +x brute_force.sh
+./brute_force.sh
+```
+
 ### 0. **Starting**
 ```sh
 # General
-tce-load -wi nano vim kmaps
+tce-load -wi nano vim kmaps automake
 sudo loadkmap < /usr/share/kmap/qwerty/br-abnt2.kmap
 
 wget ftp://ftp.figlet.org/pub/figlet/program/unix/figlet-2.2.5.tar.gz
