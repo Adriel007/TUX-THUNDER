@@ -11,12 +11,12 @@ sudo make install
 
 cd
 echo "alias clear='clear && echo -e \"\e[31m$(figlet TUX-THUNDER)\e[0m\"'" >> /home/tc/.ashrc
-exec ash
+. /home/tc/.ashrc
 clear
 
 show_menu() {
     echo "Installation Menu"
-    echo "1. ..."
+    echo "1. Brute Force"
     echo "2. ..."
     echo "3. ..."
     echo "4. ..."
@@ -38,13 +38,9 @@ show_menu() {
 install_tool() {
     case $1 in
         1)
-            tce-load -wi git cmake openssl-dev zlib_base-dev ncursesw-dev libssh2-dev libcap-dev libgcrypt-dev autoconf automake perl5 m4
-            git clone https://github.com/vanhauser-thc/thc-hydra.git
-            cd thc-hydra
-            ./configure
-            make
-            sudo make install
-            cd ..
+            curl -L -O https://raw.githubusercontent.com/adriel007/tux-thunder/main/brute_force.sh
+            chmod +x brute_force.sh
+            ./brute_force.sh
             ;;
         0)
             echo "Exiting..."
