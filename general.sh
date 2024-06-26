@@ -41,10 +41,7 @@ install_tool() {
             curl -L -O https://raw.githubusercontent.com/adriel007/tux-thunder/main/brute_force.sh
             chmod +x brute_force.sh
             ./brute_force.sh
-            ;;
-        0)
-            echo "Exiting..."
-            exit 0
+            clear
             ;;
         *)
             echo "Invalid option!"
@@ -55,6 +52,11 @@ install_tool() {
 while true; do
     show_menu
     read -p "Choose an option: " choice
+    
+    if [ "$choice" -eq 0 ]; then
+        break
+    fi
+    
     install_tool $choice
     read -p "Press Enter to continue..."
 done
