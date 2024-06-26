@@ -5,6 +5,7 @@ sudo loadkmap < /usr/share/kmap/qwerty/br-abnt2.kmap
 
 wget ftp://ftp.figlet.org/pub/figlet/program/unix/figlet-2.2.5.tar.gz
 tar zxf figlet-2.2.5.tar.gz
+rm figlet-2.2.5.tar.gz
 cd figlet-2.2.5
 make
 sudo make install
