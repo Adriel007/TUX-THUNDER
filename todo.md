@@ -4,7 +4,7 @@
 - **Ferramentas**: Wireshark (CLI: tshark), tcpdump, dsniff, Ettercap (CLI mode)
 
 ```sh
-tce-load -wi wireshark-cli
+tce-load -wi wireshark
 tce-load -wi tcpdump
 # dsniff não está disponível no repositório oficial do Tiny Core. Baixe e compile:
 wget http://monkey.org/~dugsong/dsniff-2.4.tar.gz
