@@ -22,4 +22,14 @@ use: ```tce@box:~$ medusa```
 - THC Hydra <br>
 use: ```tce@box:~$ hydra```
 - Hashcat <br>
-```tce@box:~$ hashcat```
+use: ```tce@box:~$ hashcat```
+### Sniffing:
+# (I can't install dsniff and ettercap)
+- Wireshark (Tshark) <br>
+use ```tce@box:~$ tshark```
+- TCPDump <br>
+use ```tce@box:~$ sudo tcpdump```
+- DSNiff <br>
+use ```...```
+- Ettercap <br>
+use ```...```

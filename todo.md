@@ -1,19 +1,4 @@
-
-
-### 2. **Sniffing**
-- **Ferramentas**: Wireshark (CLI: tshark), tcpdump, dsniff, Ettercap (CLI mode)
-
-```sh
-tce-load -wi wireshark
-tce-load -wi tcpdump
-# dsniff não está disponível no repositório oficial do Tiny Core. Baixe e compile:
-wget http://monkey.org/~dugsong/dsniff-2.4.tar.gz
-tar xvf dsniff-2.4.tar.gz
-cd dsniff-2.4
-./configure && make && make install
-tce-load -wi ettercap
-```
-
+install dsniff, ettercap
 ### 3. **Forense**
 - **Ferramentas**: The Sleuth Kit (TSK), Autopsy (CLI tools), Volatility, FTK Imager CLI
 
