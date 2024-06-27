@@ -18,7 +18,7 @@ show_menu() {
     echo "Installation Menu"
     
     echo "1. Brute Force (Hydra, John The Ripper, Medusa, Hashcat)"
-    echo "2. ..."
+    echo "2. Sniffing (Wireshark, TCPDump, dsniff, ettercap)"
     echo "3. ..."
     echo "4. ..."
     echo "5. ..."
@@ -42,6 +42,12 @@ install_tool() {
             curl -L -O https://raw.githubusercontent.com/adriel007/tux-thunder/main/brute_force.sh
             chmod +x brute_force.sh
             ./brute_force.sh
+            clear
+            ;;
+        2)
+            curl -L -O https://raw.githubusercontent.com/adriel007/tux-thunder/main/sniffing.sh
+            chmod +x sniffing.sh
+            ./sniffing.sh
             clear
             ;;
         *)
