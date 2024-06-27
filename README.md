@@ -1,6 +1,8 @@
 # TUX-THUNDER
 ## TINY CORE PENTEST SERIES
 
+![Thux-Thunder Image](https://raw.githubusercontent.com/adriel007/tux-thunder/main/tux-thunder.jpg)
+
 ## Installation
 ### - Core Linux:
 - Brute Force:
