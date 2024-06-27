@@ -15,7 +15,11 @@ chmod +x general.sh
 
 ## Tools
 ### Brute Force:
-- John The Ripper ```(john)```
-- Medusa ```(medusa)```
-- THC Hydra ```(hydra)```
-- Hashcat ```(hashcat)```
+- John The Ripper 
+use: ```tce@box:~$ john```
+- Medusa 
+use: ```tce@box:~$ medusa```
+- THC Hydra 
+use: ```tce@box:~$ hydra```
+- Hashcat 
+```tce@box:~$ hashcat```
